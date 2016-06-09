@@ -1,18 +1,19 @@
 package busqueda;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Busqueda {
 
     public static void main(String[] args) {
         //Numero de elementos
-        System.out.println("Introduce el número de elementos: ");
-        Scanner scNmElementos = new Scanner(System.in);
-        int numElementos=scNmElementos.nextInt();
+//        System.out.println("Introduce el número de elementos: ");
+//        Scanner scNmElementos = new Scanner(System.in);
+        int numElementos=Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce el número de elementos:"));
         //Número que queremos buscar
-        System.out.println("Introduce el número para averiguar: ");
-        Scanner scNumAveriguar = new Scanner(System.in);
-        int numAveriguar=scNumAveriguar.nextInt();
+//        System.out.println("Introduce el número para averiguar: ");
+//        Scanner scNumAveriguar = new Scanner(System.in);
+        int numAveriguar=Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce el número para averiguar:"));
         int[] numeros = new int[numElementos];
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = i * 5;
