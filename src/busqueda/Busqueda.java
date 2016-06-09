@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 public class Busqueda {
 
     public static void main(String[] args) {
+        //Lo comentado es la primera rama consola
         //Numero de elementos
 //        System.out.println("Introduce el número de elementos: ");
 //        Scanner scNmElementos = new Scanner(System.in);
